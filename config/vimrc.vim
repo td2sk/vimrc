@@ -1,0 +1,8 @@
+NeoBundle 'Shougo/vimshell'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'tpope/vim-endwise'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'mattn/zencoding-vim'
+NeoBundle 'vim-scripts/dbext.vim'
+NeoBundle 'kien/ctrlp.vim'
