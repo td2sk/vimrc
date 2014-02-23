@@ -24,6 +24,10 @@ filetype plugin indent on
 autocmd MyAutoCmd FileType * setlocal formatoptions-=ro 
 
 if(!empty(neobundle#get_not_installed_bundle_names()))
-  NeoBundleInstall
-  source ~/.vimrc
+  echomsg 'Not installed bundles: '
+    \ string(neobundle#get_not_installed_bundle_names())
+  if confirm('Install bundles now?', "yes\nNo", 2) == 1
+    NeoBundleInstall
+    source ~/.vimrc
+  endif
 end
