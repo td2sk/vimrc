@@ -37,6 +37,9 @@ set textwidth=0
 " 折り返し表示
 set wrap
 
+" スクロール速度の改善
+set lazyredraw
+
 " 全角スペースの表示
 highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=darkgray
 match ZenkakuSpace /　/
